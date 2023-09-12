@@ -1,4 +1,4 @@
-Javvadi Jaswant Sri Akhilesh
+
 
 85%
 Basic UI creation in Android
