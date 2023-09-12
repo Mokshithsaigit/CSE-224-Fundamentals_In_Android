@@ -1,0 +1,269 @@
+1Question 1
+What is the back stack used for in Android?
+
+1 / 1 point
+
+ backward navigation
+
+
+
+ generating routes
+
+
+
+forward navigation
+
+
+
+ database queries
+
+
+Correct
+Correct! Upon launching the application, the start destination is placed into the stack. When another destination is opened it will be placed on top of the stack. 
+
+2.
+Question 2
+The type of the route variable which corresponds to the destination in the navigation graph is ________ .
+
+1 / 1 point
+
+Int
+
+
+
+String
+
+
+
+Boolean
+
+
+Correct
+Correct! The route is a String unique for every destination. 
+
+3.
+Question 3
+True or False: The object keyword is used for creating an object without creating the class. 
+
+1 / 1 point
+
+True
+
+
+
+False
+
+
+Correct
+Correct. The object keyword is commonly used in Jetpack Compose for creating routes.
+
+4.
+Question 4
+Which of the following data types are supported by Navigation? Select three that apply. 
+
+1 / 1 point
+
+Array
+
+
+
+ Boolean
+
+
+Correct
+Correct! Boolean types are defined as NavType.BoolType.
+
+
+ Integer
+
+
+Correct
+Correct! Integer types are defined as NavType.IntType.
+
+
+ String
+
+
+Correct
+Correct! String is the default type when the type is not specified. 
+
+5.
+Question 5
+Given the below function ProfileScreen, which of the following is the correct definition of its corresponding destination?
+
+ 
+
+1234567891011121314
+ @Composable
+  fun ProfileScreen(userName: String?) {
+     Column(
+         Modifier.fillMaxSize(),
+         verticalArrangement = Arrangement.Center,
+         horizontalAlignment = Alignment.CenterHorizontally
+     ) {
+         Text(
+             text = "Welcome, $userName",
+             fontSize = 33.sp
+
+
+1 / 1 point
+
+
+12345678
+  interface Destinations {
+     val route: String
+  }
+  object Profile{
+     const val argUserName = "UserName"
+     override val route = "Profile"
+  }
+
+
+
+
+ 
+
+12345678
+  interface Destinations {
+     val route: String
+  }
+  object Profile : Destinations {
+     const val argUserName = "UserName"
+     override val route = "Profile"
+  }
+
+
+
+
+
+12345678
+  interface Destinations {
+     val route: String
+  }
+  object Profile : Destinations {
+     argUserName = "UserName"
+     override val route = "Profile"
+  }
+
+
+
+Correct
+Correct! The ProfileScreen function accepts an argument to be displayed. The argument to be passed is defined in the Destination object.
+
+6.
+Question 6
+Which of the following is used for the primary destinations which need to be accessed from anywhere within the app?
+
+1 / 1 point
+
+ TopAppBar
+
+
+
+ Navigation component
+
+
+
+ bottomNavigation
+
+
+Correct
+Correct! It is a common practice to use an icon, route and title for each bottom navigation item.
+
+7.
+Question 7
+Which of the following is used for a horizontal list of an unknown number of items?
+
+1 / 1 point
+
+ LazyColumn
+
+
+
+ LazyRow
+
+
+
+ Row
+
+
+Correct
+Correct! LazyRow is similar to row, but it is used for horizontal scrolling lists.
+
+8.
+Question 8
+Which of the following composes only that which is in the visible viewport? Select all that apply.
+
+1 / 1 point
+
+ LazyRow
+
+
+Correct
+Correct! LazyRow creates a horizontal scrolling list.
+
+
+ LazyVerticalGrid
+
+
+Correct
+Correct! A LazyVerticalGrid displays the items in a vertical scrollable grid spanned across multiple columns.
+
+
+ LazyColumn
+
+
+Correct
+Correct! LazyColumn creates a vertical scrolling list.
+
+
+LazyGrid
+
+
+9.
+Question 9
+Imagine you have defined the destination below and you want to use the variable argProductNumber in the NavHost.
+
+
+1234
+  object Product : Destinations {
+       const val argProductNumber = "ProductNumber"
+       override val route = "Product"
+  }
+Which of the following is the correct way to append the argProductNumber to the Product route within the NavHost?
+
+1 / 1 point
+
+ Product.route + “/{$Product.argProductNumber}
+
+
+
+ Product.route + “/{$argProductNumber}
+
+
+
+ Product/{ProductNumber}
+
+
+Correct
+Correct! The above expression will result in a string formatted Product/{ProductNumber}.
+
+10.
+Question 10
+Which of the following best describes a NavController?
+
+1 / 1 point
+
+ NavController acts as a container for displaying the current destination.
+
+
+
+NavController is a collection of navigable destinations.
+
+
+
+ NavController is responsible for navigating between destinations.
+
+
+Correct
+Correct! NavController takes care of navigating between destinations while tracking and manipulating the back stack.

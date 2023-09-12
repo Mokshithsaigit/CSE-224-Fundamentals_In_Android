@@ -1,0 +1,240 @@
+Javvadi Jaswant Sri Akhilesh
+
+85%
+Basic UI creation in Android
+Graded Assignment • 50 min
+
+DueAug 27, 11:59 PM IST
+Your grade: 85%
+Your latest: 85%•
+Your highest: 85%•
+To pass you need at least 80%. We keep your highest score.
+1.
+Question 1
+Imagine you are building an Android app in which you will need multiple UI elements consisting of the same structure. Which of the following is true about how you should define the composable for this UI element?
+
+1 / 1 point
+
+You should ensure the composable is the root of the tree
+
+
+
+You should define one composable for each occurrence of the UI element. 
+
+
+
+You should define the composable once in such a way that it is reusable. 
+
+
+
+You should use the traditional view system instead.
+
+
+Correct
+That’s correct! Composable functions can take in parameters and emit a UI element which can be reused in many parts of your application.
+
+2.
+Question 2
+How does an Activity allow the user to interact with an Android app? 
+
+1 / 1 point
+
+It allows the app to access system resources. 
+
+
+
+It provides the window for the app's user interface and allows the user to interact with the UI elements. 
+
+
+
+It allows the user to view content.
+
+
+Correct
+That’s correct! An Activity is the app component that contains the user interface. 
+
+3.
+Question 3
+Which of the following are all UI elements subclasses of?
+
+1 / 1 point
+
+the ViewGroup class
+
+
+
+the Layout class
+
+
+
+an Activity
+
+
+
+the View class
+
+
+Correct
+That's correct! A nested UI structure can consist of multiple types of layouts.
+
+4.
+Question 4
+Which of these methods are called as part of the Activity Lifecycle in Android UI Development? Select all that apply. 
+
+1 / 1 point
+
+onCreate()
+
+
+Correct
+That’s correct! onCreate() is a method that is part of the Activity Lifecycle.
+
+
+onStart()
+
+
+Correct
+That’s correct! onStart() is a method that is part of the Activity Lifecycle.
+
+
+onInitialized()
+
+
+
+onDestroy()
+
+
+Correct
+That’s correct! onDestroy() is a method that is part of the Activity Lifecycle.
+
+5.
+Question 5
+Which of the following view groups has an src property?
+
+1 / 1 point
+
+ProgressBar
+
+
+
+Button 
+
+
+
+ImageView
+
+
+
+TextView
+
+
+Correct
+That's correct! Only the ImageView has an src attribute.
+
+6.
+Question 6
+What is a Composable in Android UI Development? 
+
+1 / 1 point
+
+An animation used to transition between activities 
+
+
+
+A library of user interface components.
+
+
+
+A reusable component in Jetpack Compose. 
+
+
+Correct
+That’s correct! In Jetpack Compose, each UI element is represented by a special function called composable.
+
+7.
+Question 7
+Which of these is a way to preview the appearance of an Android UI?
+
+1 / 1 point
+
+Use the Android Studio Layout Editor.
+
+
+
+Use the Android Studio Emulator.
+
+
+
+Use the Android Studio Debugger.
+
+
+Correct
+That’s correct! You can preview in the Android Studio Layout Editor and you can also preview appearance using the @preview annotation.
+
+8.
+Question 8
+Which of the following is a collection of views organized in a well defined manner?
+
+0 / 1 point
+
+View container
+
+
+
+User Interface
+
+
+
+View group
+
+
+Incorrect
+Not quite. Please review the video 
+Views and Layouts
+.
+
+9.
+Question 9
+When you are specifying the size of a text element on an Android UI, you can use the sp unit of measurement. This term is shorthand for?
+
+1 / 1 point
+
+Scale-independent pixel.
+
+
+
+Pixel Point
+
+
+
+Scale-dependent pixel
+
+
+Correct
+Scale-independent pixel is correct. It is similar to dp and often used to specify font sizes.
+
+10.
+Question 10
+Which of the following are most commonly used simple layouts? Select all that apply.
+
+0.5 / 1 point
+
+Box
+
+
+Correct
+That’s correct! This layout places composables on top of one another. 
+
+
+Image
+
+
+
+Column
+
+
+This should not be selected
+That’s correct! This layout places composables vertically. 
+
+
+Row

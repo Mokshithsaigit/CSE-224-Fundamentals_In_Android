@@ -1,0 +1,227 @@
+80%
+Building UI with Jetpack Compose
+Graded Assignment • 50 min
+
+DueSep 3, 11:59 PM IST
+1.
+Question 1
+When chaining modifiers, which order are they applied in?
+
+1 point
+
+right to left
+
+
+
+left to right
+
+
+
+top to bottom
+
+
+
+alphabetical order
+
+
+2.
+Question 2
+Which of the following Material Components can be implemented using Jetpack Compose? Select all that apply.
+
+1 point
+
+card
+
+
+
+text-field
+
+
+
+list
+
+
+
+button
+
+
+3.
+Question 3
+Which of the following is the correct way to add a spacing of 10 dp around all four sides of a text composable?
+
+1 point
+
+
+12345
+Text(
+    text = “Hello World!”,
+    modifier = padding(10.dp)
+)
+
+
+
+
+
+12345
+Text(
+    text = “Hello World!”,
+    modifier = Modifier.padding(10.dp)
+)
+
+
+
+
+
+12345
+Text(
+    text = “Hello World!”,
+    padding = Modifier.padding(10.dp)
+)
+
+
+
+4.
+Question 4
+Which of the following is the special object Compose uses to hold the value of a state?
+
+1 point
+
+MutableStateOf
+
+
+
+remember 
+
+
+
+State
+
+
+
+MutableState
+
+
+5.
+Question 5
+Which of the following does the button composable expect you to define?
+
+1 point
+
+onSubmit
+
+
+
+onClick
+
+
+
+onPress
+
+
+
+onTap
+
+
+6.
+Question 6
+Which of the following is a composable in Jetpack Compose that provides a foundation for building an app?
+
+1 point
+
+@Composable
+
+
+
+Scaffold
+
+
+
+AppBar
+
+
+
+Design system
+
+
+7.
+Question 7
+What is Material Design? 
+
+1 point
+
+Material Design is a language for programming mobile applications.
+
+
+
+Material Design is a design system for developing UIs for Android applications. 
+
+
+
+Material Design is a system for developing websites.
+
+
+
+Material Design is a framework for creating web applications.
+
+
+8.
+Question 8
+Which of the following can a slot accept composable content as?
+
+1 point
+
+a composable function
+
+
+
+a Kotlin object
+
+
+
+a modifier
+
+
+
+a generic lamba
+
+
+9.
+Question 9
+Which of the following UI patterns normally opens by clicking a button on the top app bar or by swiping from the left edge of the screen to the right?
+
+1 point
+
+floating action buttons
+
+
+
+the navigation drawer
+
+
+
+snackbars
+
+
+
+app bars
+
+
+10.
+Question 10
+Which of the following is a common design structure found in many apps?
+
+1 point
+
+lambdas
+
+
+
+Slots
+
+
+
+UI Patterns
+
+
+
+Composables
